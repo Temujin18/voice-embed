@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Voice Embedder</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <header class="card-panel brown white-text"><h2>Voice Embedder</h2></header>
+    <div class="container">
+      <form enctype="multipart/form-data" method="POST" action="{{url_for('embed')}}">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Choose File</span>
+            <input type="file" name="audio-file" id="audio-file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text" placeholder="Upload a wav audio file.">
+          </div>
+          <input class="btn blue" type="submit" value="Upload File">
+        </div>
+      </form>
+    </div>
+    {% if message %}
+      <div><p>{{ message }}</p></div>
+    {% endif %}
+    <div style="height: 200px;"></div>
+    
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Personal Project for Learning Web Development in Python.</h5>
+            <p class="grey-text text-lighten-4">Made with: Flask, Materialize CSS, and resemblyzer library. :) </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
