@@ -4,7 +4,7 @@ click==7.1.1
 decorator==4.4.2
 Flask==1.1.1
 itsdangerous==1.1.0
-Jinja2==2.11.1
+Jinja2==2.11.3
 joblib==0.14.1
 librosa==0.7.2
 llvmlite==0.31.0
