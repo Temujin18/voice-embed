@@ -10,7 +10,7 @@ librosa==0.7.2
 llvmlite==0.31.0
 MarkupSafe==1.1.1
 numba==0.48.0
-numpy==1.18.1
+numpy==1.22.0
 pkg-resources==0.0.0
 pycparser==2.20
 resampy==0.2.2
